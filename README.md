@@ -1,24 +1,34 @@
-# README
+# Rails at the Movies
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Building a web app around [the IMDB Movie dataset](https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset).
 
-Things you may want to cover:
+## Models
 
-* Ruby version
+Production Company
 
-* System dependencies
+- name (string, present, unique)
 
-* Configuration
+Movie
 
-* Database creation
+- title (string, present, unique)
+- year (integer, present)
+- duration (integer, present)
+- description (text, present)
+- average_vote (decimal, present)
+- production_company_id (FK)
 
-* Database initialization
+## Routes
 
-* How to run the test suite
+```
+GET /                         (Home Page)
+GET /movies                   (Show all Movies)
+GET /movies/:id               (Show a Movie by ID)
+GET /production_companies     (Show all Production Companies)
+GET /production_companies/:id (Show a Production Company by ID)
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Controllers
 
-* Deployment instructions
-
-* ...
+HomeController - index
+MoviesController - index, show
+ProductionCompaniesController - index, show
