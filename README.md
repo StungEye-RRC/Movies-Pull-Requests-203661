@@ -29,6 +29,6 @@ GET /production_companies/:id (Show a Production Company by ID)
 
 ## Controllers
 
-HomeController - index
-MoviesController - index, show
+HomeController - index  
+MoviesController - index, show  
 ProductionCompaniesController - index, show
