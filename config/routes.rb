@@ -3,7 +3,12 @@ Rails.application.routes.draw do
 
   get "/pages/:permalink" => "pages#permalink", as: :permalink
 
-  resources :movies, only: %i[index show]
+  resources :movies, only: %i[index show] do
+    collection do
+      get "search"
+    end
+  end
+
   resources :production_companies, only: %i[index show]
 
   root to: "home#index"

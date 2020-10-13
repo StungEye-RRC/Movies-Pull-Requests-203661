@@ -10,4 +10,9 @@ class MoviesController < ApplicationController
   end
   # The @movie variable will be shared with:
   # app/views/movies/show.html.erb
+
+  def search
+    wildcard_search = "%#{params[:keywords]}%"
+    @movies = Movie.where("title LIKE ?", wildcard_search)
+  end
 end
