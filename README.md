@@ -2,6 +2,16 @@
 
 Building a web app around [the IMDB Movie dataset](https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset).
 
+After cloning repo:
+
+```
+cd Movies-Pull-Requests-203661
+bundle install
+yarn install
+rails db:migrate
+rails db:seed
+```
+
 ## Models
 
 Production Company
