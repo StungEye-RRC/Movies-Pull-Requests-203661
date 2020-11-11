@@ -11,7 +11,11 @@ yarn install
 rails db:migrate
 rails db:seed
 ```
-
+You can also have a startup script run these commands for you, if you are feeling lazy by running
+```
+ruby startup.rb
+```
+From the root directory of this project
 ## Models
 
 Production Company
@@ -39,6 +43,6 @@ GET /production_companies/:id (Show a Production Company by ID)
 
 ## Controllers
 
-HomeController - index  
-MoviesController - index, show  
+HomeController - index
+MoviesController - index, show
 ProductionCompaniesController - index, show

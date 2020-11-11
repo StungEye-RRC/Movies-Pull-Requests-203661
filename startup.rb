@@ -1,0 +1,8 @@
+system("echo bundle install")
+system("bundle install")
+system("echo yarn install")
+system("yarn install")
+system("echo rails db:migrate")
+system("rails db:migrate")
+system("echo rails db:seed")
+system("rails db:seed")
